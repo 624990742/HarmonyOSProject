@@ -9,6 +9,11 @@
       "value": "description"
     },{
       "name": "EntryAbility_label",
-      "value": "label"
-    }]
+      "value": "待办列表"
+    },
+    {
+      "name": "page_title",
+      "value": "待办"
+    }
+  ]
 }

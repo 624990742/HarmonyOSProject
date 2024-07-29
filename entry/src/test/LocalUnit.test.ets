@@ -6,6 +6,40 @@ export default function localUnitTest() {
     beforeAll(() => {
       // Presets an action, which is performed only once before all test cases of the test suite start.
       // This API supports only one parameter: preset action function.
+      let name: string = '晨仔';
+      let age: number = 30;
+      let isMale: boolean = true;
+      console.log(name);
+      console.log(age.toString());
+      console.log(`我的名字是${name},我今年${age}岁`);
+
+      enum  Animal {
+        dog,
+        cat,
+        tiger,
+        lion
+      }
+      let animal: Animal = Animal.dog;
+
+      let luckyNum: number | string = 7;
+      luckyNum = 'seven';
+      luckyNum = 7;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     });
     beforeEach(() => {
       // Presets an action, which is performed before each unit test case starts.
