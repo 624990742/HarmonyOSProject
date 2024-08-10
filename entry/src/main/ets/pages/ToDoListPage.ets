@@ -29,7 +29,7 @@ struct  ToDoListPage {
           top: $r('app.float.title_margin_top'),
           bottom: $r('app.float.title_margin_bottom')
         })
-        .textAlign(TextAlign.Start)
+        .textAlign(TextAlign.Center)
 
       ForEach(this.totalTasks, (item: string) => {
         ToDoItem({ content: item })

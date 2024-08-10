@@ -5,7 +5,6 @@
   @State isComplete: boolean = false;
   //封装一个可以重复创建Image的方法
   @Builder labelIcon(icon: Resource) {
-
     Image(icon)
       .objectFit(ImageFit.Contain)
       .width($r('app.float.checkbox_width'))
@@ -13,6 +12,16 @@
       .margin($r('app.float.checkbox_margin'))
   }
 
+
+  // @Builder arrow() {
+  //   // 添加向右的箭头图标
+  //   Image($r('app.media.ic_arrow_right')) // 假设 'ic_arrow_right' 是向右箭头的资源名称
+  //     .objectFit(ImageFit.Contain)
+  //     .width($r('app.float.arrow_width')) // 设置箭头的宽度
+  //     .height($r('app.float.arrow_height')) // 设置箭头的高度
+  //     .margin($r('app.float.arrow_margin')) // 设置箭头的外边距
+  // }
+  //
 
   build() {
     Row(){
@@ -36,5 +45,6 @@
     .onClick(() => {
       this.isComplete = !this.isComplete;
     })
+    // this.arrow();
   }
 }

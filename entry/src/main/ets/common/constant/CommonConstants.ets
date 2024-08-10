@@ -47,11 +47,12 @@ export  default  class  CommonConstant {
    * agents data.
    */
   static readonly TODO_DATA: Array<string> = [
-    "早起晨练",
-    "准备早餐",
-    "阅读名著",
-    "学习ArkTS",
-    "看剧放松"
+    "红楼梦",
+    "水浒传",
+    "西游记",
+    "学位学士英语",
+    "梦想的力量",
+    "总会好起来的"
   ];
 
 
