@@ -1,3 +1,4 @@
+
 /**
  * 公共常量类
  */
@@ -54,7 +55,6 @@ export  default  class  CommonConstant {
     "梦想的力量",
     "总会好起来的"
   ];
-
 
 
 }
