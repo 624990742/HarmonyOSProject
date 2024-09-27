@@ -46,22 +46,18 @@
         }
       ],
       "BUILD_MODE": "debug"
-    },
-    "ERROR_MESSAGE": {
-      "TASK_TYPE": "PreviewArkTS",
-      "ERROR_CODE": "2109000"
     }
   },
-  "totalTime": 3821644542,
+  "totalTime": 4866313250,
   "moduleNum": 1,
   "taskTime": {
-    "compileArkTS": 0,
+    "compileArkTS": 3496847375,
     "buildArkTS": 0,
     "compileJS": 0,
-    "buildJS": 0,
-    "compileResource": 63907041,
-    "packageHap": 0,
-    "signHap": 0
+    "buildJS": 821042,
+    "compileResource": 152260333,
+    "packageHap": 238900667,
+    "signHap": 1054292
   },
   "isIncremental": true,
   "hasIncremental": true,

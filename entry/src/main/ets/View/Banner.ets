@@ -1,5 +1,5 @@
-
-
+import { router } from '@kit.ArkUI';
+import { BusinessError } from '@kit.BasicServicesKit'
 /**
  ResourceStr 类型为Resource类型与string类型的联合类型。
  Resource类型在加载本地图片资源时会用到的，而string类型在加载网络图片资源时会用到。
@@ -48,6 +48,14 @@ export default  struct Banner {
           .width('100%')
           .padding({ top: 11, left: 16, right: 16 })
           .borderRadius(16)
+          .onClick(() =>{
+
+            router.pushUrl({ url: 'pages/WebPage' }).then(() => {
+              console.info('成功跳转到第二页')
+            }).catch((error: BusinessError) => {
+              // console.error(`Failed to jump to the second page. Code is ${err.code}, message is ${err.message}`)
+            })
+          })
       }, (item: BannerClass, index: number) => item.id)
     }
     .autoPlay(true)

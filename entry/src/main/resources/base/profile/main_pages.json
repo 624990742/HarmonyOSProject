@@ -3,6 +3,7 @@
     "pages/Index",
     "pages/First",
     "pages/Second",
-    "pages/ToDoListPage"
+    "pages/ToDoListPage",
+    "pages/WebPage"
   ]
 }
