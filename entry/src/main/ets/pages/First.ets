@@ -69,8 +69,15 @@ struct First {
             })
           })
 
-
-
+          Button('返回')
+            .type(ButtonType.Capsule)
+            .margin({ top: 20 })
+            .backgroundColor('#0D9FFB')
+            .width('40%')
+            .height('5%')
+            .onClick(()=> {
+              router.back()
+            });
 
         }
         .width('100%')
