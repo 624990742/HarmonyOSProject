@@ -4,6 +4,7 @@
     "pages/First",
     "pages/Second",
     "pages/ToDoListPage",
-    "pages/WebPage"
+    "pages/WebPage",
+    "PreferenceDemo/pages/PreferenceIndex"
   ]
 }

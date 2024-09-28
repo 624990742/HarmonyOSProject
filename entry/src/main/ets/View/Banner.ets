@@ -48,14 +48,14 @@ export default  struct Banner {
           .width('100%')
           .padding({ top: 11, left: 16, right: 16 })
           .borderRadius(16)
-          .onClick(() =>{
-
-            router.pushUrl({ url: 'pages/WebPage' }).then(() => {
-              console.info('成功跳转到第二页')
-            }).catch((error: BusinessError) => {
-              // console.error(`Failed to jump to the second page. Code is ${err.code}, message is ${err.message}`)
-            })
-          })
+          // .onClick((index) =>{
+          //   router.pushUrl({ url: 'pages/WebPage' }).then(() => {
+          //     console.info('成功跳转到第二页')
+          //   }).catch((error: BusinessError) => {
+          //     // console.error(`Failed to jump to the second page. Code is ${err.code}, message is ${err.message}`)
+          //   })
+          // })
+        .onClick(() => this.handleBannerClick(index))
       }, (item: BannerClass, index: number) => item.id)
     }
     .autoPlay(true)
@@ -65,4 +65,39 @@ export default  struct Banner {
         .color('#1a000000')
         .selectedColor('#0A59F7'))
   }
+
+
+  handleBannerClick(index: number) {
+    switch (index) {
+      case 0:
+        router.pushUrl({ url: 'pages/First' }).then(() => {
+          console.info('成功跳转到第一页');
+        }).catch((error: BusinessError) => {
+          console.error(`跳转失败: ${error.message}`);
+        });
+
+        break;
+      case 1:
+        router.pushUrl({ url: 'pages/WebPage' }).then(() => {
+          console.info('成功跳转到第二页');
+        }).catch((error: BusinessError) => {
+          console.error(`跳转失败: ${error.message}`);
+        });
+        break;
+
+      case 2:
+
+        router.pushUrl({ url: 'PreferenceDemo/pages/PreferenceIndex' }).then(() => {
+          console.info('成功跳转首选项页');
+        }).catch((error: BusinessError) => {
+          console.error(`跳转失败: ${error.message}`);
+        });
+        break;
+      default:
+        console.log('未定义的跳转');
+    }
+  }
+
 }
+
+
