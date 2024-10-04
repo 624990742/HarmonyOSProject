@@ -6,31 +6,24 @@
  这允许根据不同的参数调用同一个构造函数，实现灵活的对象初始化。
  例如，一个构造函数可以接受数字或字符串作为参数，根据传入的参数类型执行不同的初始化操作‌。
  */
-export  class  GlobalContext {
-  private constructor() {}
+
+export class GlobalContext {
+  private constructor() { }
   private static instance: GlobalContext;
-  private _objects = new Map<string,object>();
-  public  static  getContext(): GlobalContext {
+  private _objects = new Map<string, Object>();
+
+  public static getContext(): GlobalContext {
     if (!GlobalContext.instance) {
       GlobalContext.instance = new GlobalContext();
     }
     return GlobalContext.instance;
   }
 
-  getObject(value: string): object | undefined {
+  getObject(value: string): Object | undefined {
     return this._objects.get(value);
   }
 
-
-  setObjec(key: string, objectClass: object): void {
-    this._objects.set(key,this._objects);
+  setObject(key: string, objectClass: Object): void {
+    this._objects.set(key, objectClass);
   }
-
-
-
-
-
-
-
-
 }

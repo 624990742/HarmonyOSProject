@@ -93,6 +93,19 @@ export default  struct Banner {
           console.error(`跳转失败: ${error.message}`);
         });
         break;
+
+      case 3:
+
+        router.pushUrl({ url: 'StartDemo/pages/LauncherPage' }).then(() => {
+          console.info('成功跳转首选项页');
+        }).catch((error: BusinessError) => {
+          console.error(`跳转失败: ${error.message}`);
+        });
+        break;
+
+
+
+
       default:
         console.log('未定义的跳转');
     }

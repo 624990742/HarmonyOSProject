@@ -16,10 +16,11 @@
 import { preferences } from '@kit.ArkData';
 import { common } from '@kit.AbilityKit';
 import { router } from '@kit.ArkUI';
-import Logger from '../sta/common/utils/Logger';
+import Logger from '../common/utils/Logger';
 import CommonConstants from '../common/constants/CommonConstants';
 import CustomDialogComponent from '../view/CustomDialogComponent';
 import { GlobalContext } from '../common/utils/GlobalContext';
+
 
 /**
  * The LauncherPage is the entry point of the application and shows how to develop the LauncherPage.

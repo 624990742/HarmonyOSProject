@@ -5,6 +5,10 @@
     "pages/Second",
     "pages/ToDoListPage",
     "pages/WebPage",
-    "PreferenceDemo/pages/PreferenceIndex"
+    "PreferenceDemo/pages/PreferenceIndex",
+    "StartDemo/pages/LauncherPage",
+    "StartDemo/pages/AdvertisingPage",
+    "StartDemo/pages/AppHomePage",
+    "StartDemo/pages/PrivacyPage"
   ]
 }
