@@ -103,8 +103,14 @@ export default  struct Banner {
         });
         break;
 
+      case 4:
 
-
+        router.pushUrl({ url: 'ArticleListDemo/pages/ArticleListPage' }).then(() => {
+          console.info('成功跳转首选项页');
+        }).catch((error: BusinessError) => {
+          console.error(`跳转失败: ${error.message}`);
+        });
+        break;
 
       default:
         console.log('未定义的跳转');

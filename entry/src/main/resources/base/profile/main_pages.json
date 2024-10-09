@@ -9,6 +9,7 @@
     "StartDemo/pages/LauncherPage",
     "StartDemo/pages/AdvertisingPage",
     "StartDemo/pages/AppHomePage",
-    "StartDemo/pages/PrivacyPage"
+    "StartDemo/pages/PrivacyPage",
+    "ArticleListDemo/pages/ArticleListPage"
   ]
 }
