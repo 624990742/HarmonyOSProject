@@ -1,0 +1,76 @@
+# 编译输出
+build/
+out/
+dist/
+cache/
+
+# 缓存文件
+.cache/
+.gradle/
+.hpm/
+.hpm_cache/
+.hpm_modules/
+.hpm_packages/
+cache/
+
+# IDE 和编辑器
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+*.class
+*.log
+
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
+*.DS_Store
+
+# 用户特定配置
+.settings/
+*.user
+*.bak
+*.tmp
+*.swp
+*.swo
+*.swn
+
+# 鸿蒙特定文件
+gradle/
+.gradle/
+.gradle/caches/
+.gradle/wrapper/
+.gradle/native/
+.gradle/buildOutputCleanup/
+.gradle/daemon/
+.gradle/dependency-cache/
+.gradle/executionHistory/
+.gradle/jc/
+.gradle/logs/
+.gradle/tmp/
+.gradle/workerMain/
+.gradle/plugins/
+.gradle/init.d/
+.gradle/startParameter/
+
+# 第三方库和依赖
+node_modules/
+lib/
+vendor/
+
+# 测试输出
+coverage/
+test-results/
+
+# 文档生成
+docs/_book/
+docs/.vuepress/dist/
+
+# 其他
+*.orig
+*.rej
+*.patch
+
+# 忽略所有 .gitignore 文件，除了当前目录下的
+!.gitignore
