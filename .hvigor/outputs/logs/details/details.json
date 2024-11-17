@@ -1,68 +1,39 @@
 {
   "HVIGOR_OHOS_PLUGIN": {
-    "MODULE_CONFIG": [
+    "MODULES": [
       {
-        "MODULE_NAME": "entry",
+        "MODULE_NAME": "1043bfc77febe75fafec0c4309faccf1",
         "API_TYPE": "stageMode",
-        "TARGETS": [
-          {
-            "name": "default"
-          },
-          {
-            "name": "ohosTest"
-          }
-        ],
-        "DEVICE_TYPES": [
-          "phone",
-          "tablet",
-          "2in1"
-        ],
-        "AOT_COMPILE_MODE": "type"
+        "INCREMENTAL_TASKS": {
+          "COMPILE_ARKTS": true
+        }
       }
     ],
-    "PROJECT_CONFIG": {
-      "PRODUCTS": [
-        {
-          "NAME": "default",
-          "COMPATIBLE_SDK_VERSION": "5.0.0(12)",
-          "RUNTIMEOS": "HarmonyOS"
-        }
-      ],
-      "BUILD_MODE_SET": [
-        {
-          "NAME": "debug"
-        },
-        {
-          "NAME": "release"
-        }
-      ],
-      "MODULES": [
-        {
-          "TARGETS": [
-            {
-              "NAME": "default"
-            }
-          ]
-        }
-      ],
-      "BUILD_MODE": "debug"
-    }
+    "BUILD_MODE": "debug"
   },
-  "totalTime": 181137958,
-  "moduleNum": 1,
-  "taskTime": {
-    "compileArkTS": 0,
-    "buildArkTS": 0,
-    "compileJS": 0,
-    "buildJS": 972833,
-    "compileResource": 0,
-    "packageHap": 0,
-    "signHap": 418458
-  },
-  "isIncremental": true,
-  "hasIncremental": true,
-  "isParallel": true,
-  "IS_DAEMON": true,
-  "LOG_LEVEL": "INFO",
-  "IS_HVIGORFILE_TYPE_CHECK": false
+  "HVIGOR": {
+    "IS_INCREMENTAL": true,
+    "IS_DAEMON": true,
+    "IS_PARALLEL": true,
+    "IS_HVIGORFILE_TYPE_CHECK": false,
+    "TASK_TIME": {
+      "1043bfc77febe75fafec0c4309faccf1": {
+        "ConfigureCmake": 100625,
+        "PreCheckSyscap": 92833,
+        "GeneratePkgContextInfo": 144209,
+        "ProcessIntegratedHsp": 580458,
+        "BuildNativeWithCmake": 126333,
+        "SyscapTransform": 1345792,
+        "BuildNativeWithNinja": 476833,
+        "BuildJS": 2956959,
+        "CompileArkTS": 565122958,
+        "GeneratePkgModuleJson": 3362917,
+        "PackageHap": 270560791,
+        "SignHap": 195524167,
+        "assembleHap": 88208
+      }
+    },
+    "TOTAL_TIME": 1207159458,
+    "BUILD_ID": "202411172006396180"
+  }
 }

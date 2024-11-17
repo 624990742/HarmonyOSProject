@@ -2,6 +2,7 @@
   "ohos-module-entry": {
     "SELECT_TARGET": "default",
     "MODULE_BUILD_DIR": "/Users/jcmac/Desktop/workSpace/AMineLocalProject/HarmonyOSProject/entry/build",
+    "DEPENDENCY_INFO": {},
     "TARGETS": {
       "default": {
         "SOURCE_ROOT": "/Users/jcmac/Desktop/workSpace/AMineLocalProject/HarmonyOSProject/entry/src/main",
@@ -107,12 +108,27 @@
               "default"
             ]
           }
-        ]
+        ],
+        "belongProjectPath": "/Users/jcmac/Desktop/workSpace/AMineLocalProject/HarmonyOSProject"
       }
     ],
     "PROFILE_OPT": {
       "app": {
-        "signingConfigs": [],
+        "signingConfigs": [
+          {
+            "name": "default",
+            "type": "HarmonyOS",
+            "material": {
+              "certpath": "/Users/jcmac/.ohos/config/default_HarmonyOSProject_K00AyTEWmJHEib6ny-B6R3hm6nx7r8lPSSBPl0tw-OQ=.cer",
+              "storePassword": "0000001BFCBDADB04A496BF0842BEDEE44AA3295087FFA38D69962F7E0A994E7E764CC1DD485E4E6E25936",
+              "keyAlias": "debugKey",
+              "keyPassword": "0000001BC16C3137E7B7B0251AB67FD6E360E677ED65CC818FBAC288F55529D7683E987F0D1832BCA165E7",
+              "profile": "/Users/jcmac/.ohos/config/default_HarmonyOSProject_K00AyTEWmJHEib6ny-B6R3hm6nx7r8lPSSBPl0tw-OQ=.p7b",
+              "signAlg": "SHA256withECDSA",
+              "storeFile": "/Users/jcmac/.ohos/config/default_HarmonyOSProject_K00AyTEWmJHEib6ny-B6R3hm6nx7r8lPSSBPl0tw-OQ=.p12"
+            }
+          }
+        ],
         "products": [
           {
             "name": "default",
@@ -147,8 +163,12 @@
     },
     "CONFIG_PROPERTIES": {
       "enableSignTask": true,
-      "skipNativeIncremental": false
-    }
+      "skipNativeIncremental": false,
+      "hvigor.keepDependency": true
+    },
+    "OVERALL_PROJECT_PATHS": [
+      "/Users/jcmac/Desktop/workSpace/AMineLocalProject/HarmonyOSProject"
+    ]
   },
   "version": 1
 }

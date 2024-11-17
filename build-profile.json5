@@ -1,17 +1,31 @@
 {
   "app": {
-    "signingConfigs": [],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/jcmac/.ohos/config/default_HarmonyOSProject_K00AyTEWmJHEib6ny-B6R3hm6nx7r8lPSSBPl0tw-OQ=.cer",
+          "storePassword": "0000001BFCBDADB04A496BF0842BEDEE44AA3295087FFA38D69962F7E0A994E7E764CC1DD485E4E6E25936",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001BC16C3137E7B7B0251AB67FD6E360E677ED65CC818FBAC288F55529D7683E987F0D1832BCA165E7",
+          "profile": "/Users/jcmac/.ohos/config/default_HarmonyOSProject_K00AyTEWmJHEib6ny-B6R3hm6nx7r8lPSSBPl0tw-OQ=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/jcmac/.ohos/config/default_HarmonyOSProject_K00AyTEWmJHEib6ny-B6R3hm6nx7r8lPSSBPl0tw-OQ=.p12"
+        }
+      }
+    ],
     "products": [
       {
         "name": "default",
         "signingConfig": "default",
-                  "compatibleSdkVersion": "5.0.0(12)",
-            "runtimeOS":"HarmonyOS",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
       }
     ],
     "buildModeSet": [
       {
-          "name": "debug",
+        "name": "debug",
       },
       {
         "name": "release"
@@ -19,8 +33,7 @@
     ]
   },
   "modules": [
-
-  {
+    {
       "name": "entry",
       "srcPath": "./entry",
       "targets": [
@@ -31,5 +44,6 @@
           ]
         }
       ]
-    }]
+    }
+  ]
 }
