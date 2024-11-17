@@ -1,7 +1,7 @@
 
-import  ListPageDataModel from '../ViewModel/ListPageDataModel';
-import CommonConstants from  '../common/constant/CommonConstants';
-import ToDoItem from '../view/ToDoItem';
+import  ListPageDataModel from '../../ViewModel/ListPageDataModel';
+import CommonConstants from '../../common/constant/CommonConstants';
+import ToDoItem from '../../View/ToDoItem';
 import router from '@ohos.router';
 
 
