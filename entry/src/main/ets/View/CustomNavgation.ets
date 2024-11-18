@@ -3,6 +3,19 @@
 @ComponentV2
 export  default   struct CustomNavgation {
   private arr: number[] = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  private imgArr: string[] = ["a","b","c","d","e","f","touxiang","ic_start_icon","icon","banner_pic0"];
+  private positiveMessages: string[] = [
+    "每一天都是新的起点。",
+    "快乐是选择，不是条件。",
+    "你的努力会带来改变。",
+    "相信自己，你比想象中强大。",
+    "小进步，大成就。",
+    "积极的态度决定一切。",
+    "追梦路上，每一步都算数。",
+    "不怕路长，只怕志短。",
+    "每个早晨，都是对生活的重新开始。",
+    "今天会更好，因为有你在。"
+  ];
   @Param currentIndex: number = 0
   @Local searchKeyword: string = '';///存储关键字
 
@@ -55,6 +68,14 @@ export  default   struct CustomNavgation {
   }
 
 
+  getRandomMessage() {
+    const randomIndex = Math.floor(Math.random() * this.positiveMessages.length);
+    return this.positiveMessages[randomIndex];
+  }
+
+
+
+
   build() {
     Column() {
       Navigation() {
@@ -80,11 +101,17 @@ export  default   struct CustomNavgation {
                 .fontWeight(500)
                 .textAlign(TextAlign.Start)
 
-              Image($r("app.media.touxiang"))
+              Image($r(`app.media.${this.imgArr[item]}`))
                 .width(56)
                 .height(56)
                 .margin({ left: 20 })
                 .borderRadius(5)
+
+              // 添加正面消息
+              Text(this.getRandomMessage())
+                .fontSize(14)
+                .fontColor('blue')
+                .margin({ left: 20 })
 
                }
                .width('90%')
