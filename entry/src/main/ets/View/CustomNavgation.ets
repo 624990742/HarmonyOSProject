@@ -1,3 +1,4 @@
+import { print } from "@kit.BasicServicesKit";
 
 
 @ComponentV2
@@ -73,8 +74,13 @@ export  default   struct CustomNavgation {
     return this.positiveMessages[randomIndex];
   }
 
+  aboutToAppear(): void {
+    console.log("aboutToAppear");
+  }
 
-
+aboutToDisappear(): void {
+  console.log("aboutToDisappear");
+}
 
   build() {
     Column() {
