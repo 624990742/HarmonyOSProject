@@ -46,7 +46,7 @@ struct WebComponent {
             // 点击按钮时，通过loadUrl，跳转到https://cn.devecostudio.huawei.com
             // this.webviewController.loadUrl('https://cn.devecostudio.huawei.com');
             // 点击按钮时，通过loadUrl，跳转到local1.html
-            this.webviewController.loadUrl($rawfile("local1.html"));
+            this.webviewController.loadUrl($rawfile("userInfo.html"));
           } catch (error){
             console.log(error);
           }
@@ -56,7 +56,7 @@ struct WebComponent {
       // Web({ src: 'https://www.baidu.com/', controller: this.webviewController })
 
       // 组件创建时，通过$rawfile加载本地文件local.html
-      Web({ src: $rawfile("local1.html"), controller: this.webviewController })
+      Web({ src: $rawfile("userInfo.html"), controller: this.webviewController })
 
     }
 

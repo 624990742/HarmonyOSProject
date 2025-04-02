@@ -92,7 +92,10 @@ float title_font_height 0x01000083
 float title_font_size 0x01000084
 float title_margin_bottom 0x01000085
 float title_margin_top 0x01000086
+media a 0x01000091
 media app_icon 0x01000001
+media b 0x0100008b
+media back 0x0100008c
 media background 0x01000015
 media banner1 0x0100001c
 media banner2 0x0100000a
@@ -102,6 +105,9 @@ media banner_pic2 0x0100000f
 media banner_pic3 0x01000016
 media banner_pic4 0x01000017
 media banner_pic5 0x0100000b
+media c 0x0100008d
+media d 0x0100008e
+media e 0x01000090
 media enablement_pic1 0x01000019
 media enablement_pic2 0x01000002
 media enablement_pic3 0x0100004a
@@ -110,6 +116,7 @@ media enablement_pic5 0x0100001a
 media enablement_pic6 0x01000044
 media enablement_pic7 0x0100000d
 media enablement_pic8 0x01000023
+media f 0x0100008f
 media foreground 0x01000006
 media ic_advertising_background 0x0100001d
 media ic_arrow_right 0x01000043

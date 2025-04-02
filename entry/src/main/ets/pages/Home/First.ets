@@ -59,7 +59,7 @@ struct First {
           .backgroundColor('#0D9FFB')
           .width('40%')
           .height('5%')
-          .id('NextId')
+          .id('NextId1')
           .onClick(() => {
             console.info('正在跳转声明式UI界面')
             router.pushUrl({ url: 'pages/ToDoListPage' }).then(() => {

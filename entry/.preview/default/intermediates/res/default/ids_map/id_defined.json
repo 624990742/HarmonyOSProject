@@ -555,5 +555,33 @@
 			"type":	"float",
 			"name":	"list_item_height",
 			"id":	"0x0100008A"
+		}, {
+			"type":	"media",
+			"name":	"b",
+			"id":	"0x0100008B"
+		}, {
+			"type":	"media",
+			"name":	"back",
+			"id":	"0x0100008C"
+		}, {
+			"type":	"media",
+			"name":	"c",
+			"id":	"0x0100008D"
+		}, {
+			"type":	"media",
+			"name":	"d",
+			"id":	"0x0100008E"
+		}, {
+			"type":	"media",
+			"name":	"f",
+			"id":	"0x0100008F"
+		}, {
+			"type":	"media",
+			"name":	"e",
+			"id":	"0x01000090"
+		}, {
+			"type":	"media",
+			"name":	"a",
+			"id":	"0x01000091"
 		}]
 }
