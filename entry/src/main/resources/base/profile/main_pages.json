@@ -10,6 +10,7 @@
     "StartDemo/pages/AdvertisingPage",
     "StartDemo/pages/AppHomePage",
     "StartDemo/pages/PrivacyPage",
-    "ArticleListDemo/pages/ArticleListPage"
+    "ArticleListDemo/pages/ArticleListPage",
+    "View/MyWebHtml"
   ]
 }

@@ -1,11 +1,27 @@
 import { router } from '@kit.ArkUI';
 import { BusinessError } from '@kit.BasicServicesKit';
+import MyWebHtml from '../../View/MyWebHtml';
 
 @Entry
 @Component
 export  default  struct MainPage {
+
+  localStorage: LocalStorage = new LocalStorage();
+  private showWebComponent: boolean = false; // 状态变量，用于控制 MyWebHtml 组件的显示
+
+
+  constructor() {
+    super();
+    this.localStorage.set('username','晨仔')
+  }
+
   build() {
     Column() {
+
+      Text(`LocalStorage 中的值：${this.localStorage.get('username')}`)
+        .fontSize(20)
+        .margin(10)
+
       // 头部信息
       Row() {
         Image($r('app.media.touxiang')) // 替换为你的头像图片资源路径
@@ -46,9 +62,7 @@ export  default  struct MainPage {
           }
           .onClick(() => {
             // 跳转到服务页面
-            // router.push({
-            //   uri: 'pages/service/service'
-            // })
+            router.pushUrl({ url: 'View/MyWebHtml' });
           })
         }
         .height(56)
@@ -165,7 +179,7 @@ export  default  struct MainPage {
               .width(24)
               .height(24)
               .margin({left:20})
-            
+
             Text('设置')
               .fontSize(18)
               .margin({ left: 10 })
@@ -179,6 +193,9 @@ export  default  struct MainPage {
         }
         .height(56)
 
+        if (this.showWebComponent){
+          MyWebHtml();
+        }
       }
       .divider({ strokeWidth: 1, color: '#FFFFFF' })
       .backgroundColor('#FFFFFF')
