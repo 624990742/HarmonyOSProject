@@ -1,6 +1,7 @@
 import { router } from '@kit.ArkUI';
 import { BusinessError } from '@kit.BasicServicesKit';
 import MyWebHtml from '../../View/MyWebHtml';
+import ToDoList from '../ToDoListPage/ToDoList';
 
 @Entry
 @Component
@@ -75,15 +76,15 @@ export  default  struct MainPage {
               .margin({left:20})
               .width(24)
               .height(24)
-            Text('收藏')
+            Text('任务列表')
               .fontSize(18)
               .margin({ left: 10 })
           }
           .onClick(() => {
-            // 跳转到收藏页面
-            // router.push({
-            //   uri: 'pages/collect/collect'
-            // })
+
+            router.pushUrl({
+              url: 'pages/ToDoListPage/ToDoList'
+            })
           })
         }
         .height(56)

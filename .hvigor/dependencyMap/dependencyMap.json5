@@ -1,1 +1,1 @@
-{"basePath":"/Users/jcmac/Desktop/workSpace/AMineLocalProject/HarmonyOSProject/.hvigor/dependencyMap/dependencyMap.json5","rootDependency":"./oh-package.json5","dependencyMap":{"entry":"./entry/oh-package.json5"},"modules":[{"name":"entry","srcPath":"../../../entry"}]}
+{"basePath":"/Users/jcmac/Desktop/workSpace/HarmonyOSProject/.hvigor/dependencyMap/dependencyMap.json5","rootDependency":"./oh-package.json5","dependencyMap":{"entry":"./entry/oh-package.json5"},"modules":[{"name":"entry","srcPath":"../../../entry"}]}

@@ -11,6 +11,7 @@
     "StartDemo/pages/AppHomePage",
     "StartDemo/pages/PrivacyPage",
     "ArticleListDemo/pages/ArticleListPage",
-    "View/MyWebHtml"
+    "View/MyWebHtml",
+    "pages/ToDoListPage/ToDoList"
   ]
 }
